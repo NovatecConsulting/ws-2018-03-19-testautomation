@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 class GreetingController(
-        private val greeter: Greeter
+        private val greeter: RemoteGreeter
 ) {
 
     @GetMapping("/greeting")
